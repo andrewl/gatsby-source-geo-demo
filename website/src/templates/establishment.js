@@ -2,6 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from '../components/layout'
 import styles from './establishment.module.css'
+import { GoogleMap, Marker } from "react-google-maps"
 
 const EstablishmentTemplate = ({ data }) => {
 
@@ -28,6 +29,11 @@ const EstablishmentTemplate = ({ data }) => {
       </div>
       <div>
         <p><strong>Competent Authority: </strong>{establishment.featureFields.CompetentA}</p>
+        <GoogleMap
+          defaultZoom={8}
+          defaultCenter={{ lat: -34.397, lng: 150.644 }}
+        >
+        </GoogleMap>
       </div>
 
     </Layout>

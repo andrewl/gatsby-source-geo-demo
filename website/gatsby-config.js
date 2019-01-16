@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/docs`,
+  pathPrefix: `/gatsby-source-geo-demo`,
   siteMetadata: {
     title: `Gatsby Geo Source Demo`,
     description: `Demo for gatsby-source-geo`,
